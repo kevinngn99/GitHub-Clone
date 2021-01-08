@@ -1,0 +1,1 @@
+{"ast":null,"code":"function SignUp() {}\n\nexport default SignUp;","map":{"version":3,"sources":["/home/kevin/Documents/GitHubClone/client/pages/signup.jsx"],"names":["SignUp"],"mappings":"AAAA,SAASA,MAAT,GAAkB,CAEjB;;AAED,eAAeA,MAAf","sourcesContent":["function SignUp() {\n    \n}\n\nexport default SignUp;\n"]},"metadata":{},"sourceType":"module"}

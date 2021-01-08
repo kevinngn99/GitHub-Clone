@@ -1,0 +1,1 @@
+{"ast":null,"code":"function register() {}\n\nexport default register;","map":{"version":3,"sources":["/home/kevin/Documents/GitHubClone/client/pages/register.jsx"],"names":["register"],"mappings":"AAAA,SAASA,QAAT,GAAoB,CAEnB;;AAED,eAAeA,QAAf","sourcesContent":["function register() {\n    \n}\n\nexport default register;\n"]},"metadata":{},"sourceType":"module"}
