@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function InputField(props) {
   const [input, setInput] = useState("");
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(props.error);
 
   const onInput = (event) => {
     setInput(event.target.value);
@@ -10,7 +10,7 @@ function InputField(props) {
 
   const validate = (input, error) => {
     if (input === "") {
-      return "border-gray-300 focus:ring-blue-500 focus:border-blue-500";
+      return "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500";
     }
     else if (error) {
       return "text-red-900 border-red-300 focus:ring-red-500 focus:border-red-500";
@@ -56,8 +56,8 @@ function InputField(props) {
 
   return (
     <div className="flex flex-col text-sm">
-      <div className="flex space-x-1">
-        <label className="mb-1">
+      <div className="flex space-x-1 font-medium">
+        <label className="text-gray-700 mb-1">
             {props.label}
         </label>
         <label className="text-red-600">
@@ -65,7 +65,7 @@ function InputField(props) {
         </label>
       </div>
       <div className="relative flex items-center">
-        <input onChange={onInput} value={input} type={props.type} className={`w-full pr-8 rounded-md shadow-sm text-sm ${validate(input, error)}`}/>
+        <input onChange={onInput} value={input} type={props.type} placeholder={props.placeholder} className={`w-full pr-8 rounded-md shadow-sm text-sm ${validate(input, error)}`}/>
         <Icon/>
       </div>
       <Message/>
